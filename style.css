@@ -1,0 +1,32 @@
+body {
+	background-image: url('https://media.giphy.com/media/RopTs3DIHoDfi/giphy.gif');
+background-size: cover;
+}
+#button {
+	background-color: white;
+	border: 0.25em solid #83f776;
+	font-size: 2em;
+	height: 3em;
+	width: 6em;
+	border-radius: 0.5em;
+	margin-bottom: 5em;
+		margin: auto;
+	display: block;
+	clear: both;
+	text-decoration: none;
+}
+h1 {
+	font-size: 2em;
+		margin-top: 5em;
+	display: block;
+text-align: center;
+}
+div {
+	margin-top: 5em;
+}
+h2 {
+	margin-top: 2em;
+	color: white;
+	font-size: 2em;
+	font-family: calibri;
+}

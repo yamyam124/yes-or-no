@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+<center><h2>Ask yes/no questions and click the button, It will tell you what to do!</h2></center>
+<div>
+<button id = "button">Magic</button>
+<h1 id = "answer" style = "font-size: 3em; font-family: verdana; color: white;"></h1>
+</div>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type="text/javascript">
+$('#button').on('click', function() {
+$("h2").hide();
+	var randomAnswer = Math.random();
+	var answer = "#";
+	if(randomAnswer < 0.1) {
+	var answer = "no.mp3";
+$("#answer").text("no");
+	} else if(randomAnswer <= 0.2) {
+	var answer = "yes.mp3";
+$("#answer").text("yes");
+	} else if(randomAnswer <= 0.3) {
+	var answer = "absolutely_not.mp3";
+$("#answer").text("absolutely not");
+	} else if(randomAnswer <= 0.4) {
+	var answer = "for_sure.mp3";
+$("#answer").text("for sure!");
+	} else if(randomAnswer <= 0.5) {
+	var answer = "ask_again.mp3";
+$("#answer").text("Ask again");
+	} else if(randomAnswer <= 0.6) {
+	var answer = "sorry_what.mp3";
+$("#answer").text("sorry... what?...");
+	} else if(randomAnswer <= 0.7) {
+	var answer = "of_course.mp3";
+$("#answer").text("of course");
+	} else if(randomAnswer <= 0.8) {
+	var answer = "no_what.mp3";
+$("#answer").text("No what the hell are you thinking about");
+	} else if(randomAnswer <= 0.9) {
+	var answer = "yes.mp3";
+$("#answer").text("yessssssssssssssssssssss");
+	} else {
+	var answer = "no.mp3";
+$("#answer").text("noooooooooooooooooooooo");
+	}
+	new Audio(answer).play()
+});
+$(document).ready(main);
+</script>
+</body>
+</html>
